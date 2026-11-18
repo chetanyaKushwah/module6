@@ -1,8 +1,6 @@
 spring:
   application:
     name: petstoreproductservice
-server:
-  port: ${PETSTOREPRODUCTSERVICE_SERVER_PORT:8082}
   datasource:
     url: ${PETSTORE_DB_URL:jdbc:postgresql://localhost:5432/petstore}
     username: ${PETSTORE_DB_USERNAME:postgres}
@@ -12,6 +10,9 @@ server:
     init:
       mode: always
       schema-locations: classpath:db/schema.sql
+
+server:
+  port: ${PETSTOREPRODUCTSERVICE_SERVER_PORT:8082}
 
 springdoc:
   api-docs:
