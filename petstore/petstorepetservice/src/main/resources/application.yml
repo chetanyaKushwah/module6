@@ -1,6 +1,15 @@
 spring:
   application:
     name: petstorepetservice
+  datasource:
+    url: ${PETSTORE_DB_URL:jdbc:postgresql://localhost:5432/petstore}
+    username: ${PETSTORE_DB_USERNAME:postgres}
+    password: ${PETSTORE_DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:db/schema.sql
 server:
   port: ${PETSTOREPETSERVICE_SERVER_PORT:8081}
 
