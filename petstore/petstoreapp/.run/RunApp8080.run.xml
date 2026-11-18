@@ -1,0 +1,17 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="RunApp8080" type="Application" factoryName="Application">
+    <envs>
+      <env name="APPLICATIONINSIGHTS_CONNECTION_STRING" value="InstrumentationKey=e40e8929-ebc3-4b16-ba18-cbbe1f95252a" />
+      <env name="IngestionEndpoint" value="https://eastus-8.in.applicationinsights.azure.com/" />
+      <env name="LiveEndpoint" value="https://eastus.livediagnostics.monitor.azure.com/" />
+      <env name="ApplicationId" value="3dafaed6-da3e-4be2-855f-9d1c1df776de" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="com.chtrembl.petstoreapp.PetStoreApplication" />
+    <module name="petstoreapp" />
+    <option name="PROGRAM_PARAMETERS" value="APPLICATIONINSIGHTS_ENABLED=true" />
+    <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

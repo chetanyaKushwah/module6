@@ -1,0 +1,10 @@
+**/target/
+**/.idea/
+**/logs/
+**/local.settings.json
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.sample
+*.iml
+.DS_Store
