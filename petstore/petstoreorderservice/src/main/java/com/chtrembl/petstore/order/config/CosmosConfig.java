@@ -21,6 +21,7 @@ public class CosmosConfig {
         return new CosmosClientBuilder()
                 .endpoint(endpoint)
                 .key(key)
+                .gatewayMode()
                 .consistencyLevel(ConsistencyLevel.SESSION)
                 .buildClient();
     }
