@@ -3,8 +3,8 @@ spring:
     name: petstoreproductservice
   datasource:
     url: ${PETSTORE_DB_URL:jdbc:postgresql://localhost:5432/petstore}
-    username: ${PETSTORE_DB_USERNAME:postgres}
-    password: ${PETSTORE_DB_PASSWORD:postgres}
+    username: ${PETSTORE_DB_USERNAME}
+    password: ${PETSTORE_DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
   sql:
     init:
